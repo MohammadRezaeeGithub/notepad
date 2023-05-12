@@ -1,0 +1,149 @@
+/************** 
+FONTS
+**************/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+:root{
+    --main-color: #7857fe;
+    --color-1:#e91e63;
+    --color-2:#f5ae10;
+    --color-3:#09d69c;
+    --bg-dark:#2b2c2f;
+    --main-to-dark-color: var(--main-color);
+    --dark-to-main-color: var(--bg-dark);
+    --shadow-black-100: 0 5px 15px rgba(0,0,0,0.1);
+    --shadow-black-300: 0 5px 15px rgba(0,0,0,0.3);
+    --black-900: #000000;
+    --black-400: #555555;
+    --black-100: #f7f7f7;
+    --black-000: #ffffff;
+    --balck-alpha-100: rgba(0,0,0,0.05);
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    overflow-x: hidden;
+    background-color: #d4d3d3;
+    line-height: 1.5;
+}
+*{
+    padding:0;
+    margin: 0;
+    outline: none !important;
+}
+img{
+    max-width: 100%;
+    vertical-align: middle;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none !important;
+}
+.section-title h2{
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--black-900);
+    text-transform: capitalize;
+    text-align: center;
+    margin:0;
+}
+.section-title h2 span{
+    color:var(--main-color);
+}
+ .form-group{
+    margin-bottom: 25px;
+}
+.form-group label{
+    padding-left: 15px;
+}
+ .form-control{
+    height: 52px;
+    border:1px solid transparent;
+    box-shadow: var(--shadow-black-100);
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    padding: 0 24px;
+    color:var(--black-900);
+    background-color: var(--black-000);
+    transition: all 0,5s ease;
+    -webkit-transition: all 0,5s ease;
+    -moz-transition: all 0,5s ease;
+    -ms-transition: all 0,5s ease;
+    -o-transition: all 0,5s ease;
+}
+ textarea.form-control{
+    height: 140px;
+    padding-top: 12px;
+    resize: none;
+}
+.form-control:focus{
+    border-color: var(--main-color);
+}
+.accordion-item{
+    margin-bottom: 20px;
+}
+.accordion-item .accordion-header{
+    box-shadow: var(--shadow-black-100);
+    background-color: white;
+    padding:10px 30px;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    cursor: pointer;
+    position:relative;
+}
+.accordion-item .accordion-header::before{
+    content: "\f067";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right:20px
+}
+.accordion-item .remove{
+    position: absolute;
+    right:-75px;
+    top:10px;
+    cursor: pointer;
+}
+.accordion-item .accordion-header:not(.collapsed)::before{
+    content:"\f068";
+    color:#ffffff;
+}
+.accordion-item .accordion-header:not(.collapsed){
+    background-color: var(--main-color);
+    box-shadow: none;
+}
+.accordion-item .accordion-header h3{
+    font-size: 18px;
+    font-weight: 500;
+    color:var(--black-900);
+    margin:0;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+.accordion-item .accordion-header:not(.collapsed) h3{
+    color:#ffffff; 
+}
+.accordion-item .accordion-body{
+    padding:20px 30px;
+    background-color: var(--black-100);
+}
+.accordion-item .accordion-header p{
+    font-weight: 300;
+    font-size: 16px;
+    color:var(--black-400);
+    line-height: 26px;
+    margin:0;
+}
